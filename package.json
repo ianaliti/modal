@@ -1,7 +1,14 @@
 {
-  "name": "modal",
-  "version": "0.1.0",
-  "private": true,
+  "name": "modal-component-iana",
+  "version": "0.1.2",
+  "main": "src/components/index.js",     
+  "exports": {
+    ".": {
+      "import": "./src/components/index.js",
+      "require": "./src/components/index.js"
+    }
+  },
+  "private": false,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -9,6 +16,7 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-router-dom": "^7.5.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },

@@ -1,9 +1,7 @@
-import React from 'react'
-import 'modal.css'
+import React from 'react';
+import './modal.css';
 
-export default function modal( { setModalOpen } ) {
-
-    
+export default function Modal( { setModalOpen } ) {
     return (
         <div className="modal-overlay">
             <div className="modal">
