@@ -6,7 +6,7 @@
 
 <h2>🚀 Installation</h2>
 
-<pre><code>npm install your-modal-package-name
+<pre><code>npm install modal-component-iana
 </code></pre>
 <p><em>Replace <code>modal-component-iana</code> with your actual package name if published, or install locally using a relative path.</em></p>
 
@@ -15,7 +15,7 @@
 <h2>🧩 Usage</h2>
 
 <pre><code>import React, { useState } from 'react';
-import Modal from 'modal-component-iana'; 
+import { Modal } from 'modal-component-iana'; 
 
 function App() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -58,23 +58,30 @@ function App() {
 
 <pre><code>/* modal.css */
 .modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal {
-  background: white;
-  padding: 2rem;
-  border-radius: 8px;
-  text-align: center;
-}
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .modal button {
+    margin-top: 10px;
+    padding: 5px 10px;
+  }
 </code></pre>
 
 <p>Feel free to customize the styles to match your project.</p>
